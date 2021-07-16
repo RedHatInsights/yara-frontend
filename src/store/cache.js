@@ -5,6 +5,10 @@ export const hasMalware = makeVar(false);
 export const sigTableFilters = makeVar({});
 export const sysTableFilters = makeVar({});
 
+export const workloads = makeVar({});
+export const selectedTags = makeVar([]);
+export const sid = makeVar([]);
+
 export const cache = new InMemoryCache({
     typePolicies: {
         Query: {
